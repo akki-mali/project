@@ -1,7 +1,7 @@
 
 var express = require('express')
 var router = express.Router()
-var content = require('../models/model')
+var content = require('../models/cs-sdk')
 
 
 router.get('/about', function(req, res) {
