@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{ entry.title }}</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="/static/stylesheets/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+            {% include "../partials/header.html" %}
+
+            {% block section %}{% endblock section %}
+
+            {% include "../partials/footer.html" %}
+
+    </body> 
+</html>           

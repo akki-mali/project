@@ -1,0 +1,98 @@
+ {% extends "./layouts/main.html" %} 
+    
+       {% block section %}
+            <section class="container">
+                <div class="slidecontainer">
+                    <div class="slideimg">
+                        <img src={{ entry.slider_img1.url }}>
+                        <div class="numbertxt">1/3</div>
+                    </div>
+
+                    <div class="slideimg">
+                        <img src={{ entry.slider_img2.url }}>
+                        <div class="numbertxt">2/3</div>
+                    </div>  
+
+                    <div class=" slideimg">
+                        <img src={{ entry.slider_img3.url }}>
+                        <div class="numbertxt">3/3</div>
+                    </div>   
+                        
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div> 
+                    
+                    
+                
+                <div class=" flex-container">
+
+                    <div class="column">
+                        <img src={{ entry.img1.url }} alt="george" class="imgcontainer">
+                        
+                        <div class="desc">
+                            <p><b>{{ entry.desc1 }}</b></p>
+                            <p>{{ entry.text1 }}</p>
+                         </div>
+                    </div>
+
+                    <div class="column">
+                        <img src={{ entry.img2.url }} alt="david" class="imgcontainer">
+                       
+                        <div class="desc">
+                            <p><b>{{ entry.desc2 }}</b></p>
+                            <p>{{ entry.text2 }}</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <img src={{ entry.img3.url }} alt="kit " class="imgcontainer">
+                        
+                        <div class="desc">
+                        <p><b>{{ entry.desc3 }}</b></p>
+                        <p>{{ entry.text3 }}</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <img src={{ entry.img4.url }} alt="dany" class="imgcontainer">
+                       
+                        <div class="desc">
+                            <p><b>{{ entry.desc4 }}</b></p>
+                            <p>{{ entry.text4 }}</p>
+                        </div>
+                    </div>
+
+             </div>
+
+             </section>
+
+            <footer class="footer">       
+                <div class="mainfooter">
+
+                    <div class="width ">
+                        <img src={{ entry.footer.logoimg.url }} id="logoimg">
+                    </div>
+                    
+                    <div class="width">
+                        <p><a href={{ entry.footer.homelink.href }}>{{ entry.footer.homelink.title }}</a></p>
+                        <p><a href="#">{{ entry.footer.faqlink.title }}</a></p>
+                             <div class="dropdown">
+                                 <a href="#">{{ entry.footer.contactlink.title }}</a>
+                                    <div class="dropcontent">
+                                        <p><a href="#">page1</a></p>
+                                        <p><a href="#">page2</a></p>
+                                    </div>    
+                            </div>
+                    </div>
+                        
+                    <div class="width">
+                        <p><a href="">{{ entry.footer.link1.title }}</a></p>
+                        <p><a href="">{{ entry.footer.link2.title }}</a></p>
+                        <p><a href="">{{ entry.footer.link3.title }}</a></p>
+                    </div>  
+                    
+                </div>
+            </footer>  
+            
+        {% endblock section %}
+   

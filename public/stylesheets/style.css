@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+.header
+{ 
+    width: 100%;
+    background-color: #15141e;
+    position: relative;
+} 
+.wrapper
+{ 
+    margin: 0 auto; 
+    width: 1200px; 
+    background-color: #000;
+}
+.nav
+{ 
+    background:rgba(24, 24, 24, 0.87); 
+    
+}
+ .nav img
+{
+    padding: 10px; 
+    width: 50px;
+   
+} 
+.nav ul
+{ 
+    background:#36393B;
+    position: relative;
+    padding: 0px;
+    margin: 0px; 
+    float: right; 
+} 
+.nav ul li 
+{
+    position: relative; 
+    display: block;
+    float: left; 
+    padding: 18px; 
+} 
+.nav ul li a
+{ 
+    display:block;
+    color:rgb(188, 32, 32);
+    text-align:center; 
+    text-decoration:none; 
+    padding:8px 20px 9px 20px; 
+}
+ .nav ul li:hover ul
+{
+    display:block; 
+} 
+.nav ul li ul
+{ 
+    display:none; 
+    position:absolute;
+    left:0; top:100%; 
+    background:#484848; 
+    z-index: 99;
+} 
+.nav ul li ul li
+{
+    width:100%; 
+    padding: 0;
+} 
+
+.nav ul li ul li a:hover
+{
+    background-color:rgba(26, 25, 25, 0.959);
+} 
+.nav ul li a:hover
+{ 
+    background-color: #f5f1f1;
+}
+
+
+
+
+.container
+{
+    background-color:#3F3F3F;
+   
+}
+
+.slidecontainer
+{
+	margin: 0 auto;
+	width:1200px;
+	position: relative;
+
+}
+.slideimg img
+{
+	height:375px;
+	width:100%;
+	
+}
+.slidecontainer a
+{
+	position: absolute;
+	color: #fff;
+	font-size: 43px;
+	top: 45%;
+}
+.next
+{
+	right:0;
+}
+.prev:hover, .next:hover
+{
+    cursor: pointer;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.slideimg
+{
+	animation-duration: 7s;
+}
+.txt
+{
+	position: absolute;
+	color:#861212;
+	font-size: 15px;
+	padding: 44px 21px;
+	bottom: 0px;
+	left: 43%;
+}
+.numbertxt
+{
+	position: absolute;
+	color: #861212;
+	font-size: 20px;
+	top: 0;
+}
+
+
+
+
+
+.flex-container
+{
+    display:flex;
+    margin: 0 auto;
+    width: 1200px;
+}
+.imgcontainer
+{		
+    width:180px; 
+    height:200px;
+    padding-top: 10px;
+}
+.column
+{
+    position: relative;
+    margin: 0 auto;
+    margin-left: 50px;
+    height: 245px;
+}
+.desc
+{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); 
+    text-align:center;
+    color: #fbfbfb;
+    width: 180px;
+}	
+
+
+
+
+
+
+/* footer starts*/
+.footer
+{
+    background: #3E3C3C;
+    width:100%;
+
+}
+
+.mainfooter
+{
+    margin: 0 auto;
+    width:  1200px; 
+    display: table; 
+    margin-bottom: 65px;
+  
+}
+
+.width
+{  
+    /* display: table-cell; */
+    width:25%;
+    float: left;
+    padding: 16px;
+}
+#logoimg
+{
+    float:left;
+	width:60px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.width a 
+{
+    color:rgb(5, 5, 5);
+
+}
+.width .dropdown
+{
+    display: block;
+    position: relative;
+}
+
+.width .dropdown .dropcontent
+{
+    display:none;
+    position: absolute;
+    z-index: 1;
+    background-color: #C9D1D7;
+}
+.dropcontent a
+{
+    color: #3F3F3F;
+    display: block;
+    text-decoration: none;
+}
+.dropdown:hover .dropcontent
+{
+    display: block;
+}
+
+
+
+
+
+
+/*footer ends*/
+
+
+
+/*footer section starts */
+.footer-section
+{
+    width:100%;
+    background-color: rgba(24, 24, 24, 1);
+    border-top: 2px solid #192774;
+    padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+}
+.rqdfooter
+{
+   margin:0 auto;
+   width:1200px;
+  
+}
+ 
+
+ .footer-links
+{
+    float:right;
+    height: auto;
+    font-size: 25px;
+}
+.footer-section .footer-links a{
+    color: rgb(0, 0, 0);
+}
+.fa 
+{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 24px;
+    width: 41px;
+    text-align: center;
+    text-decoration:none;
+    margin-top: 17px;
+    text-align: center;
+
+}
+.fa:hover
+{
+    opacity:0.7;
+}
+.fa-instagram:hover
+{
+    background: #125688;
+    color: #fff;
+}
+
+.fa-instagram:hover
+{
+    background: #125688;
+    color: #fff;
+ }
+.fa-facebook:hover
+{
+   background: #3B5998;
+   color: #fff;
+}
+         
+.fa-twitter:hover 
+{
+    background: #55ACEE;
+    color: #fff;
+}
+.fa-google:hover
+{
+    background: #dd4b39;
+    color: #fff;
+}
+.fa-youtube:hover
+{
+    background: #bb0000;
+    color: #fff;
+}
+.fa-snapchat-ghost:hover
+{
+    background: #fffc00;
+    color: #fff;
+}
+ .copyright
+{
+    float: left;
+    padding-top: 15px;
+    color:rgb(0, 0, 0);
+}
+
+/*footer section ends*/       

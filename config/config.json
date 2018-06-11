@@ -1,0 +1,7 @@
+{
+    "port" : 3001,
+    "options" : {
+        "url": "https://cdn.contentstack.io/v3/content_types/home/entries/bltaf9b98d9b135acaa?api_key=blt8a42d75ee14ed638&access_token=blt30a781433baa5861&environment=preview&locale=en-us&include_dimension=true",
+        "method" : "GET"
+        }
+}
