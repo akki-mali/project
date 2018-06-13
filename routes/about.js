@@ -5,7 +5,7 @@ var content = require('../models/cs-sdk')
 
 
 router.get('/about', function(req, res) {
-    content.Stack.ContentType('home').Query()
+    content.Stack.ContentType('about').Query()
     .toJSON()
     .find()
     .spread(function success(result) {

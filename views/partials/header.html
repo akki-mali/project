@@ -4,13 +4,13 @@
                 <nav class="nav"> 
                     <a href={{ url }}><img src={{ partials.header.logo.url }}></a>
                         <ul> 
-                            <li><a href={{ partials.header.menulinks[0].href }}>{{ partials.header.menulinks[0].title }}</a></li>
-                            <li><a href={{ partials.header.menulinks[1].href }}>{{ partials.header.menulinks[1].title }}</a></li>
-                            <li><a href={{ partials.header.menulinks[2].href }}>{{ partials.header.menulinks[2].title }}</a></li>
-                            <li><a href={{ partials.header.menulinks[3].href }}>{{ partials.header.menulinks[3].title }}</a>
+                            <li><a href={{ partials.header.menu[0].link.href }}>{{ partials.header.menu[0].link.title }}</a></li>
+                            <li><a href={{ partials.header.menu[1].link.href }}>{{ partials.header.menu[1].link.title }}</a></li>
+                            <li><a href={{ partials.header.menu[2].link.href }}>{{ partials.header.menu[2].link.title }}</a></li>
+                            <li><a href={{ partials.header.menu[3].link.href }}>{{ partials.header.menu[3].link.title }}</a>
                                 <ul>
-                                    <li><a href="#">Page 1</a></li>
-                                    <li><a href="#">Page 2</a></li> 
+                                    <li><a href={{ partials.header.menu[3].submenu[0].href }}>{{ partials.header.menu[3].submenu[0].title }}</a></li>
+                                    <li><a href={{ partials.header.menu[3].submenu[1].href }}>{{ partials.header.menu[3].submenu[1].title }}</a></li> 
                                 </ul> 
                             </li>
                         </ul> 

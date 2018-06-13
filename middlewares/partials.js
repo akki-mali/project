@@ -1,7 +1,7 @@
 var async = require('async')
 var Contentstack = require('contentstack')
-var config = require('../config/config')
-const Stack = Contentstack.Stack(config.api_key, config.access_token,config.environment)
+var config = require('config')
+const Stack = Contentstack.Stack(config.get('api_key'), config.get('access_token'),config.get('environment'))
 
 
 module.exports = function (req, res, next) {

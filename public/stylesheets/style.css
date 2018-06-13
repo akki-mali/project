@@ -124,7 +124,12 @@ table {
     background-color: #f5f1f1;
 }
 
-
+.aboutdesc
+{   
+    margin: auto;
+    width: 1200px;
+    padding: 55px
+}
 
 
 .container

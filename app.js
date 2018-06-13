@@ -1,6 +1,6 @@
 var createError = require('http-errors')
 var express = require('express')
-var app = express();
+var app = express()
 var route = require('./routes/index')(app)
 var nunjucks = require('nunjucks')
 var path = require('path')
