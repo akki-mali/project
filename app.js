@@ -1,11 +1,11 @@
-// var createError = require('http-errors')
+var createError = require('http-errors')
 var express = require('express')
 var app = express();
 var route = require('./routes/index')(app)
 var nunjucks = require('nunjucks')
 // var path = require('path')
 // var cookieParser = require('cookie-parser')
-// var logger = require('morgan')
+var logger = require('morgan')
 // var indexRouter = require('./routes/index')
 // var usersRouter = require('./routes/users')
 
@@ -20,7 +20,7 @@ nunjucks.configure('views', {
 }) 
 
 
-// app.use(logger('dev'))
+app.use(logger('dev'))
 // app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use('/static', express.static(__dirname + '/public'))

@@ -1,12 +1,16 @@
 var express = require('express')
 var router = express.Router()
-
 var content = require('../models/cs-sdk')
 
 
 router.get('/', function (req, res) {
-    content.cms(function (data) {
-        res.render('home.html', data)
+    content.Stack.ContentType('home').Query()
+    .toJSON()
+    .find()
+    .spread(function success(result) {
+        res.render('home.html', {
+            entry: result[0],
+        })
     })
 })
 

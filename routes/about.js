@@ -5,8 +5,13 @@ var content = require('../models/cs-sdk')
 
 
 router.get('/about', function(req, res) {
-    content.cms(function(data) {
-    res.render('about.html', data)
+    content.Stack.ContentType('home').Query()
+    .toJSON()
+    .find()
+    .spread(function success(result) {
+        res.render('about.html', {
+            entry: result[0],
+        })
     })
 })
 
