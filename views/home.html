@@ -24,75 +24,49 @@
             
             
         
-        <div class=" flex-container">
+            <div class=" flex-container">
 
-            <div class="column">
-                <img src={{ entry.testimonials.image[0].url }} alt="george" class="imgcontainer">
-                
-                <div class="desc">
-                    <p><b>{{ entry.testimonials.name[0] }}</b></p>
-                    <p>{{ entry.testimonials.description[0] }}</p>
-                 </div>
-            </div>
-
-            <div class="column">
-                <img src={{ entry.testimonials.image[1].url }} alt="david" class="imgcontainer">
-               
-                <div class="desc">
-                    <p><b>{{ entry.testimonials.name[1] }}</b></p>
-                    <p>{{ entry.testimonials.description[1] }}</p>
-                </div>
-            </div>
-
-            <div class="column">
-                <img src={{ entry.testimonials.image[2].url }} alt="kit " class="imgcontainer">
-                
-                <div class="desc">
-                <p><b>{{ entry.testimonials.name[2] }}</b></p>
-                <p>{{ entry.testimonials.description[2] }}</p>
-                </div>
-            </div>
-
-            <div class="column">
-                <img src={{ entry.testimonials.image[3].url }} alt="dany" class="imgcontainer">
-               
-                <div class="desc">
-                    <p><b>{{ entry.testimonials.name[3] }}</b></p>
-                    <p>{{ entry.testimonials.description[3] }}</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <footer class="footer">       
-        <div class="mainfooter">
-
-            <div class="width ">
-                <img src={{ entry.footerlogo.url }} id="logoimg">
-            </div>
-            
-            <div class="width">
-                <p><a href={{ entry.menu[0].href }}>{{ entry.menu[0].title }}</a></p>
-                <p><a href={{ entry.menu[1].href }}>{{ entry.menu[1].title }}</a></p>
-                     <div class="dropdown">
-                         <a href={{ entry.menu[2].href }}>{{ entry.menu[2].title }}</a>
-                            <div class="dropcontent">
-                                <p><a href="#">page1</a></p>
-                                <p><a href="#">page2</a></p>
-                            </div>    
+                <div class="column">
+                    <img src={{ entry.testimonials[0].image.url }} alt="george" class="imgcontainer">
+                    
+                    <div class="desc">
+                        <p><b>{{ entry.testimonials[0].name }}</b></p>
+                        <p>{{ entry.testimonials[0].description }}</p>
                     </div>
-            </div>
+                </div>
+
+                <div class="column">
+                    <img src={{ entry.testimonials[1].image.url }} alt="david" class="imgcontainer">
                 
-            <div class="width">
-                <p><a href="">{{ entry.links[0].title }}</a></p>
-                <p><a href="">{{ entry.links[1].title }}</a></p>
-                <p><a href="">{{ entry.links[2].title }}</a></p>
-            </div>  
-            
-        </div>
-    </footer>  
+                    <div class="desc">
+                        <p><b>{{ entry.testimonials[1].name }}</b></p>
+                        <p>{{ entry.testimonials[1].description }}</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <img src={{ entry.testimonials[2].image.url }} alt="kit " class="imgcontainer">
+                    
+                    <div class="desc">
+                    <p><b>{{ entry.testimonials[2].name }}</b></p>
+                    <p>{{ entry.testimonials[2].description }}</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <img src={{ entry.testimonials[3].image.url }} alt="dany" class="imgcontainer">
+                
+                    <div class="desc">
+                        <p><b>{{ entry.testimonials[3].name }}</b></p>
+                        <p>{{ entry.testimonials[3].description }}</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    
             
         {% endblock section %}
    

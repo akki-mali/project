@@ -1,10 +1,10 @@
 var express = require('express')
 var router = express.Router()
-var content = require('../models/cs-sdk')
+var Stack = require('../models/cs-sdk')
 
 
 router.get('/', function (req, res) {
-    content.Stack.ContentType('home').Query()
+    Stack.ContentType('home').Query()
     .toJSON()
     .find()
     .spread(function success(result) {
