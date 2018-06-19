@@ -2,10 +2,22 @@ var express = require('express')
 var router = express.Router()
 var Stack = require('../models/cs-sdk')
 
-router.get('/blog/:title', function(req,res){
-    console.log(req.params.title)
+
+router.get('/', function(req, res) {
     Stack.ContentType('blogs').Query()
-     .where('title', req.params.title)
+    .toJSON()
+    .find()
+    .spread(function success(result) {
+        res.render('blog-list.html', {
+            entries: result
+        })
+    })
+})
+
+
+router.get('/:title', function(req,res){
+   Stack.ContentType('blogs').Query()
+    .where('title', req.params.title)
     .toJSON()
     .find()
     .spread(function success(result) {
@@ -15,5 +27,6 @@ router.get('/blog/:title', function(req,res){
         })
     })
 })
+
 
 module.exports = router

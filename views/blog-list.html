@@ -1,0 +1,13 @@
+{% extends "./layouts/main.html" %}
+
+
+{% block section %}
+<div class="body">
+    <ul>
+        {% for entry in entries %}
+        <li><a href={{ entry.link.href }}>{{ entry.link.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock section %}
+
