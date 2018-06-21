@@ -6,10 +6,11 @@
         </div>
         
         <div class="width">
-            <p><a href={{ partials.footer.menu[0].href }}>{{ partials.footer.menu[0].title }}</a></p>
-            <p><a href={{ partials.footer.menu[1].href }}>{{ partials.footer.menu[1].title }}</a></p>
+                {% for footer in partials.footer.menu %}
+            <p><a href={{ footer.href }}>{{ footer.title }}</a></p>
+             {% endfor %}
                  <div class="dropdown">
-                     <a href={{ partials.footer.menu[2].href }}>{{ partials.footer.menu[2].title }}</a>
+                     <a href={{ footer.href }}>{{ footer.title }}</a>
                         <div class="dropcontent">
                             <p><a href="#">page1</a></p>
                             <p><a href="#">page2</a></p>
@@ -18,26 +19,24 @@
         </div>
             
         <div class="width">
-            <p><a href="">{{ partials.footer.links[0].title }}</a></p>
-            <p><a href="">{{ partials.footer.links[1].title }}</a></p>
-            <p><a href="">{{ partials.footer.links[2].title }}</a></p>
+            {% for footer in partials.footer.links %}
+            <p><a href="">{{ footer.title }}</a></p>
+            {% endfor %}
         </div>  
         
     </div>
 </footer>  
-<div class="footer-section">     
-    <div class=" rqdfooter">
-        <div class="copyright">{{ partials.footer.copyright }}</div>
-        <div class="footer-links">
-            <a href="{{ partials.footer.fontlinks[0].link.href }}"><i class="{{ partials.footer.fontlinks[0].class }}"></i></a>
-            <a href="{{ partials.footer.fontlinks[1].link.href }}"><i class="{{ partials.footer.fontlinks[1].class }}"></i></a>
-            <a href="{{ partials.footer.fontlinks[2].link.href }}"><i class="{{ partials.footer.fontlinks[2].class }}"></i></a>   
-            <a href="{{ partials.footer.fontlinks[3].link.href }}"><i class="{{ partials.footer.fontlinks[3].class }}"></i></a>
-            <a href="{{ partials.footer.fontlinks[4].link.href }}"><i class="{{ partials.footer.fontlinks[4].class }}"></i></a>
-            <a href="{{ partials.footer.fontlinks[5].link.href }}"><i class="{{ partials.footer.fontlinks[5].class }}"></i></a>
-        </div>
-        
-    </div>
-</div>      
+        <div class="footer-section">     
+            <div class=" rqdfooter">
+                <div class="copyright">{{ partials.footer.copyright }}</div>
+                
+                <div class="footer-links">
+                    {% for footer in partials.footer.fontlinks%}
+                    <a href="{{ footer.link.href }}"><i class="{{ footer.class }}"></i></a>
+                    {% endfor %}
+                </div>
+                
+            </div>
+        </div>      
         
     <script src="/static/javascripts/myscript.js"></script>    

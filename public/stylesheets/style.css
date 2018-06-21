@@ -135,6 +135,10 @@ table {
 {
     line-height: 2;
 }
+.body h3
+{
+    font-size: 30px;
+}
 
 .container
 {

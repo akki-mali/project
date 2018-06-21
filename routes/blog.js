@@ -16,13 +16,12 @@ router.get('/', function(req, res) {
 
 
 router.get('/:title', function(req,res){
-   Stack.ContentType('blogs').Query()
+  Stack.ContentType('blogs').Query()
     .where('title', req.params.title)
     .toJSON()
     .find()
     .spread(function success(result) {
-        console.log(result)
-      res.render('blog.html', {
+         res.render('blog.html', {
             entry: result[0]
         })
     })
